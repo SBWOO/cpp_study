@@ -1,0 +1,6 @@
+/home/maverick64/c++_ws/c++_std/design_pattern/gtest/Example_project/build/CMakeFiles/rebuild_cache.dir
+/home/maverick64/c++_ws/c++_std/design_pattern/gtest/Example_project/build/CMakeFiles/edit_cache.dir
+/home/maverick64/c++_ws/c++_std/design_pattern/gtest/Example_project/build/CMakeFiles/sumtest.dir
+/home/maverick64/c++_ws/c++_std/design_pattern/gtest/Example_project/build/CMakeFiles/run_sum_tests.dir
+/home/maverick64/c++_ws/c++_std/design_pattern/gtest/Example_project/build/CMakeFiles/sum_app.dir
+/home/maverick64/c++_ws/c++_std/design_pattern/gtest/Example_project/build/CMakeFiles/sum.dir

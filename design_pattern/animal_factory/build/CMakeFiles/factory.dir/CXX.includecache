@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maverick64/c++_ws/c++_std/design_pattern/animal_factory/animal.h
+iostream
+-
+string
+-
+
+/home/maverick64/c++_ws/c++_std/design_pattern/animal_factory/animal_factory.h
+iostream
+-
+cat.h
+/home/maverick64/c++_ws/c++_std/design_pattern/animal_factory/cat.h
+dog.h
+/home/maverick64/c++_ws/c++_std/design_pattern/animal_factory/dog.h
+memory
+-
+iostream
+-
+
+/home/maverick64/c++_ws/c++_std/design_pattern/animal_factory/cat.h
+animal.h
+/home/maverick64/c++_ws/c++_std/design_pattern/animal_factory/animal.h
+
+/home/maverick64/c++_ws/c++_std/design_pattern/animal_factory/dog.h
+animal.h
+/home/maverick64/c++_ws/c++_std/design_pattern/animal_factory/animal.h
+
+/home/maverick64/c++_ws/c++_std/design_pattern/animal_factory/main.cpp
+iostream
+-
+animal_factory.h
+/home/maverick64/c++_ws/c++_std/design_pattern/animal_factory/animal_factory.h
+

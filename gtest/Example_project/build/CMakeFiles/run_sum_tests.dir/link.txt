@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/run_sum_tests.dir/sum_test.o  -o run_sum_tests  -Wl,-rpath,/home/maverick64/c++_ws/c++_std/design_pattern/gtest/Example_project/build -lgcov libsum.so -lgtest -lgtest_main -lpthread -lgcov 

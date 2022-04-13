@@ -1,0 +1,7 @@
+Log file created at: 2022/04/12 10:33:31
+Running on machine: maverick64-OMEN-Laptop-15-en1xxx
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0412 10:33:31.344971 27885 glog_tutorial.cpp:11] INFO 레벨의 로그
+W0412 10:33:31.345163 27885 glog_tutorial.cpp:12] WARNING 레벨의 로그
+E0412 10:33:31.345274 27885 glog_tutorial.cpp:14] ERROR 레벨의 로그
+F0412 10:33:31.345340 27885 glog_tutorial.cpp:17] FATAL 레벨의 로그

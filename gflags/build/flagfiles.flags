@@ -1,0 +1,5 @@
+#!/bin/bash
+# General functionality gflag_eg.
+--big_menu=true
+--port=8888
+--languages="italian, spanish, protuguese"

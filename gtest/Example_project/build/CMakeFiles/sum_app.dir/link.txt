@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/sum_app.dir/main.o  -o sum_app   -L/home/maverick64/c++_ws/c++_std/design_pattern/gtest/Example_project/.  -Wl,-rpath,/home/maverick64/c++_ws/c++_std/design_pattern/gtest/Example_project/.:/home/maverick64/c++_ws/c++_std/design_pattern/gtest/Example_project/build -lgcov libsum.so -lgcov 

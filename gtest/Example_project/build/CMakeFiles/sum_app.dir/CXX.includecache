@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maverick64/c++_ws/c++_std/design_pattern/gtest/Example_project/main.cpp
+iostream
+-
+sum.h
+/home/maverick64/c++_ws/c++_std/design_pattern/gtest/Example_project/sum.h
+
+/home/maverick64/c++_ws/c++_std/design_pattern/gtest/Example_project/sum.h
+

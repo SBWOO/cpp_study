@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/maverick64/c++_ws/GTSAM_example/easyPoint2KalmanFilter.cpp
+gtsam/nonlinear/ExtendedKalmanFilter.h
+-
+gtsam/inference/Symbol.h
+-
+gtsam/slam/PriorFactor.h
+-
+gtsam/slam/BetweenFactor.h
+-
+gtsam/geometry/Point2.h
+-
+

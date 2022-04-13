@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/glog_tutorial.out.dir/glog_tutorial.cpp.o  -o glog_tutorial.out  -lglog /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2 -lpthread 

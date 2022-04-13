@@ -1,0 +1,4 @@
+Log file created at: 2022/04/12 10:32:14
+Running on machine: maverick64-OMEN-Laptop-15-en1xxx
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F0412 10:32:14.229187 27705 glog_tutorial.cpp:17] FATAL 레벨의 로그

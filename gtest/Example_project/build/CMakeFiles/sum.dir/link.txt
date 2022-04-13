@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libsum.so -o libsum.so CMakeFiles/sum.dir/sum.o  -lgcov 

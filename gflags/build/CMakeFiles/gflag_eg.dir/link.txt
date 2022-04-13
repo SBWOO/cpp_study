@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/gflag_eg.dir/main.cpp.o  -o gflag_eg  /usr/lib/x86_64-linux-gnu/libgflags.so.2.2.2 -lpthread 
