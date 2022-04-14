@@ -1,7 +1,7 @@
 build/*
 .vscode/*
 
-*/vscode
-*/build
+*/.vscode/
+*/build/
 *.out
 
