@@ -4,19 +4,18 @@
 
 using namespace std::chrono_literals;
 
-std::once_flag Flag;
+std::once_flag flag;
 std::mutex mtx;
-
 void print()
 {
-  std::cout << "This should be called once." << std::endl;
+  std::cout << "This function only prints Message once" << std::endl;
 }
 
 void fn()
 {
-  std::call_once(Flag, print);
+  std::call_once(flag, print);
   mtx.lock();
-  std::cout << "thread id:" << std::this_thread::get_id() << std::endl;
+  std::cout << "Thread id :" << std::this_thread::get_id() << std::endl;
   mtx.unlock();
 }
 
