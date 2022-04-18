@@ -9,7 +9,9 @@ std::condition_variable cv;
 
 void waitFn()
 {
+  mtx.lock();
   std::cout << "wait" << std::endl;
+  mtx.unlock();
   std::unique_lock<std::mutex> lck(mtx);
   while(!readyFlag)
   {
@@ -25,7 +27,9 @@ void waitFn()
 
 void signalFn()
 {
+  mtx.lock();
   std::cout << "signal" << std::endl;
+  mtx.unlock();
   {
     std::lock_guard<std::mutex> lck(mtx);
     readyFlag = true;
