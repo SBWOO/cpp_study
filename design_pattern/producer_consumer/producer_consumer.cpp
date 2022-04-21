@@ -3,7 +3,37 @@
 #include <condition_variable>
 #include <mutex>
 #include <vector>
+#include <queue>
 
+class StrQueue
+{
+public:
+  void addStr(std::string s)
+  {
+    {
+      std::lock_guard<std::mutex> lck(mtx_);
+      strs_queue_.push(std::move(s));
+    }
+    cv_.notify_all();
+  }
+
+  std::string getStr()
+  {
+    std::unique_lock<std::mutex> lck(mtx_);
+    while(strs_queue_.empty()) {
+      cv_.wait(lck);
+    }
+    std::string s = std::move(strs_queue_.front());
+    strs_queue_.pop();
+    lck.unlock();
+
+    return s;
+  }
+private:
+  std::mutex mtx_;
+  std::condition_variable cv_;
+  std::queue<std::string> strs_queue_;
+};
 class StrStack
 {
 public:
@@ -38,9 +68,10 @@ private:
  std::condition_variable mCv;
 };
 
+
 int main()
 {
-  StrStack strStack;
+  StrQueue strStack;
 
   //producer
   std::thread t1([&](){

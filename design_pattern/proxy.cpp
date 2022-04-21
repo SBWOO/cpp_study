@@ -8,22 +8,26 @@ public:
 // 여기서부터 주석하고 연습
 class RealSubject : public Subject {
 public:
-  void request() {std::cout << "RealSubject Request" << std::endl;}
+  void request()
+  {
+    std::cout << "Real Subject Request!" << std::endl;
+    return;
+  }
 };
 
-class Porxy : public Subject {
+class Proxy : public Subject {
 public:
-  Proxy() : _realsubject(nullptr) {}
-  ~Proxy() {if(_realsubject) delete _realsubject; }
-
-  void request() {
-    if(!_realsubject)
-     _realsubject = new RealSubject;
-
-     _realsubject->request();
+  void request()
+  {
+    if(s_ == nullptr) {
+      s_ = new RealSubject;
+    }
+    s_->request();
+    return;
   }
 private:
-  RealSubject* _realsubject;
+  RealSubject * s_;
+
 };
 // 여기까지 주석
 
