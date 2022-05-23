@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic "CMakeFiles/'dispatcher_demo'.dir/pipeline_main.cpp.o"  -o "'dispatcher_demo'"  -Wl,-rpath,/home/maverick64/c++_ws/cpp_study/multithread_design/worker_dispatcher/build libdispatcher.so -lpthread 

@@ -33,9 +33,14 @@ int main() {
   Request *rq = 0;
 
   while (!signal_caught && cycles < 50) {
+    // creating request
+
+    cout << "main : request cycle no." << cycles << " is running" << endl;
     rq = new Request();
     rq->setValue(cycles);
     rq->setOutput(&logFnc);
+
+    // adding request to running thread
     Dispatcher::addRequest(rq);
     cycles++;
   }

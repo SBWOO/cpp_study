@@ -37,8 +37,11 @@ bool Dispatcher::stop() {
 }
 
 void Dispatcher::addRequest(AbstractRequest* request) {
+  std::cout << "locking workersMutex" << std::endl;
   workersMutex.lock();
+  std::cout << "workersMutex lock finished" << std::endl;
   if(!workers.empty()) {
+    // get workers on the available queue
     Worker* worker = workers.front();
     worker->setRequest(request);
     condition_variable* cv;
@@ -46,12 +49,15 @@ void Dispatcher::addRequest(AbstractRequest* request) {
     cv->notify_one();
     workers.pop();
     workersMutex.unlock();
+
   }
   workersMutex.unlock();
   requestsMutex.lock();
+  // add request to queue
   requests.push(request);
   requestsMutex.unlock();
 }
+
 bool Dispatcher::addWorker(Worker* worker) {
   bool wait = true;
   requestsMutex.lock();
@@ -61,12 +67,12 @@ bool Dispatcher::addWorker(Worker* worker) {
     requests.pop();
     wait = false;
     requestsMutex.unlock();
-  }
-  else {
+  } else {
     requestsMutex.unlock();
     workersMutex.lock();
     workers.push(worker);
-    workersMutex.lock();
+    workersMutex.unlock(); //실수 목록 : unlock을 실수로 lock으로 적음;
+                           // 결과적으로 deadlock 현상을 해결하기위해 2시간 소모
   }
   return wait;
 }

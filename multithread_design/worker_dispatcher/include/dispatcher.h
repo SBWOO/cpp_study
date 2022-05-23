@@ -15,7 +15,7 @@ public:
   static bool init(int num_workers);
   static void addRequest(AbstractRequest* request);
   static bool stop();
-  static bool addWorker(Worker * work);
+  static bool addWorker(Worker * worker);
 
 private:
   static queue<AbstractRequest*> requests;

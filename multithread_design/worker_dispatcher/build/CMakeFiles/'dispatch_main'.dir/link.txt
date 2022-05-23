@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic "CMakeFiles/'dispatch_main'.dir/pipeline_main.cpp.o" "CMakeFiles/'dispatch_main'.dir/dispatcher.cpp.o"  -o "'dispatch_main'"  -lpthread 

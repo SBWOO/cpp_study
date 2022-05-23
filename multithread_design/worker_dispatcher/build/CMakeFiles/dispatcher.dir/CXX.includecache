@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/request.h
+string
+-
+
+/home/maverick64/c++_ws/cpp_study/multithread_design/worker_dispatcher/request.cpp
+request.h
+/home/maverick64/c++_ws/cpp_study/multithread_design/worker_dispatcher/request.h
+

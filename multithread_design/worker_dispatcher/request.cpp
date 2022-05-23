@@ -5,5 +5,5 @@ void Request::process() {
 }
 
 void Request::finish() {
-  outFnc("Finished request" + std::to_string(value));`
+  outFnc("Finished request " + std::to_string(value));
 }

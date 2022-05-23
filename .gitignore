@@ -2,6 +2,7 @@ build/*
 .vscode/*
 
 */.vscode/
-*/build/
+*/build
 *.out
+./multithread_design/worker_dispatcher/build/*
 
